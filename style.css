@@ -1,3 +1,6 @@
+
+
+
 /* Importing Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
@@ -14,13 +17,13 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, #25be1f, #1125d6);
 }
 
 .container {
   max-width: 700px;
   width: 100%;
-  background-color: #fff;
+  background-color: #cbebbb;
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -40,7 +43,7 @@ body {
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, #1aa716, #000000);
 }
 
 .content form .user-details {
@@ -171,3 +174,4 @@ form .button input:hover {
     flex-direction: column;
   }
 }
+
