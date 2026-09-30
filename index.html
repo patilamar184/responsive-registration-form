@@ -1,80 +1,172 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Responsive Registration Form | CodingLab </title>
+
+  <meta
+    name="description"
+    content="Create your account by completing the registration form."
+  >
+
+  <title>Create an Account</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <!-- Title section -->
-    <div class="title">Registration</div>
-    <div class="content">
-      <!-- Registration form -->
-      <form action="#">
-        <div class="user-details">
-          <!-- Input for Full Name -->
-          <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+
+  <main>
+    <section class="registration" aria-labelledby="registration-title">
+
+      <header class="registration__header">
+        <h1 id="registration-title">Create your account</h1>
+        <p>Join us today. It only takes a few minutes.</p>
+      </header>
+
+      <form action="#" method="post">
+
+        <!-- Personal information -->
+        <fieldset>
+          <legend>Personal information</legend>
+
+          <div class="form-group">
+            <label for="full-name">Full name</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full_name"
+              placeholder="Enter your full name"
+              autocomplete="name"
+              required
+            >
           </div>
-          <!-- Input for Username -->
-          <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Choose a username"
+              autocomplete="username"
+              minlength="3"
+              required
+            >
           </div>
-          <!-- Input for Email -->
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            >
           </div>
-          <!-- Input for Phone Number -->
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+91 98765 43210"
+              autocomplete="tel"
+            >
           </div>
-          <!-- Input for Password -->
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="password" placeholder="Enter your password" required>
+        </fieldset>
+
+
+        <!-- Account security -->
+        <fieldset>
+          <legend>Account security</legend>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
           </div>
-          <!-- Input for Confirm Password -->
-          <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="password" placeholder="Confirm your password" required>
+
+          <div class="form-group">
+            <label for="confirm-password">Confirm password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm_password"
+              placeholder="Re-enter your password"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            >
           </div>
+        </fieldset>
+
+
+        <!-- Gender -->
+        <fieldset>
+          <legend>Gender</legend>
+
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+            >
+            Male
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+            >
+            Female
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="prefer_not_to_say"
+            >
+            Prefer not to say
+          </label>
+        </fieldset>
+
+
+        <!-- Terms -->
+        <div class="form-group">
+          <label>
+            <input
+              type="checkbox"
+              name="terms"
+              required
+            >
+            I agree to the terms and conditions.
+          </label>
         </div>
-        <div class="gender-details">
-          <!-- Radio buttons for gender selection -->
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <!-- Label for Male -->
-            <label for="dot-1">
-              <span class="dot one"></span>
-              <span class="gender">Male</span>
-            </label>
-            <!-- Label for Female -->
-            <label for="dot-2">
-              <span class="dot two"></span>
-              <span class="gender">Female</span>
-            </label>
-            <!-- Label for Prefer not to say -->
-            <label for="dot-3">
-              <span class="dot three"></span>
-              <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
-        </div>
-        <!-- Submit button -->
-        <div class="button">
-          <input type="submit" value="Register">
-        </div>
+
+
+        <button type="submit">
+          Create account
+        </button>
+
       </form>
-    </div>
-  </div>
+
+    </section>
+  </main>
+
 </body>
 </html>
+```
